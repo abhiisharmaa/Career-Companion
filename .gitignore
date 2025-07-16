@@ -1,0 +1,9 @@
+# created by virtualenv automatically
+venv/etc
+__pycache__/
+*.pyc
+.env
+*.pdf
+*.txt
+venv/
+temp_resume.pdf
