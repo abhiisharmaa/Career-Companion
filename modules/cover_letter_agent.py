@@ -1,6 +1,10 @@
 import google.generativeai as genai
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
-genai.configure(api_key="AIzaSyCh-BkPs-c1AUGG-ubaqK5m5EgQ8QixJE0")
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+
 
 def generate_cover_letter(resume_text, job_description):
     prompt = f"""
